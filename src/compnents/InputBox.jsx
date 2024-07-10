@@ -11,11 +11,9 @@ function InputBox({
     currencyDisable = false,
     className = "",
 })
-// yaha pe hum para de rahe hai
+
 {
    const amountInputId = useId()
-//    ye humne bond karne ko banya hai taki ek jaise hi number rahe jaha bhi use kare waha pe eg me label or input ko dekho lo vaha use kiya hai likhne isski itne jarurat nahi hai hum mynum me de sakhte the dono me.
-
     return (
         <div className={`bg-white p-3 rounded-lg text-sm flex ${className} `}>
             <div className="w-1/2">
@@ -30,7 +28,6 @@ function InputBox({
                     disabled={amountDisable}
                     value={amount}
                     onChange={(e) => onAmountChange && onAmountChange(Number(e.target.value))}
-                // yaha Number isliye kyuki ye string deta hai na
                 />
             </div>
             <div className="w-1/2 flex flex-wrap justify-end text-right">
